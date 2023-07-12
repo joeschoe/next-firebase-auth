@@ -1,0 +1,20 @@
+{
+  "name": "nextfire",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "encoding": "^0.1.13",
+    "firebase": "^10.0.0",
+    "firebase-admin": "^11.9.0",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1"
+  }
+}
