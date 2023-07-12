@@ -20,7 +20,7 @@ export default function Login() {
   }
   return (
     <div className="App">
-      Login:
+      Sign in:
       <input
         type="email"
         value={email}
