@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <h3>Next 13 React Server Components Firebase Auth Example</h3>
-        <h5>As of june 11 2023</h5>
+        <h5>As of July 11 2023</h5>
         <h5>
           <Link href={"https://github.com/joeschoe/nextfire"}>
             Source on github
