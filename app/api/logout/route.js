@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 
-//Route handler for logout endpoint that removes the value and expires the session cookie
+//Route handler for logout endpoint that expires the session cookie
 export async function POST() {
   const options = {
     name: "session",

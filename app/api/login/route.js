@@ -6,7 +6,7 @@ import { cookies, headers } from "next/headers";
 //verifies it
 //creates a session cookie
 //and sets it in the browser
-//auth is then hanlded firebase-admin verifying the seesion in getUser()
+//the session can then be verified with getUser()
 export async function POST() {
   const authorization = headers().get("Authorization");
   if (authorization?.startsWith("Bearer ")) {

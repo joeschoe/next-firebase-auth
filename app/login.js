@@ -4,10 +4,9 @@ import { clientAuth } from "@/lib/firebase-client";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import postToken from "@/lib/post-token";
 
-//client log in component that
-//logs in with the normal firebase client auth
-//uses postToken() to post the token to the server and logout of firebase client auth
-//the rest of the auth flow is handled server side using the firebase-admin library in getUser()
+//Client log in component that
+//logs in with firebase client auth
+//uses postToken() to post the ID token to the server and logout of firebase client auth
 
 export default function Login() {
   const [signInWithEmailAndPassword, user, loading, error] =
