@@ -8,7 +8,7 @@ This is just an **example** not any sort of starter that should be used to build
 
 ### Start
 
-To run it locally you'll have to [set up a js firebase app](https://firebase.google.com/docs/web/setup) as per normal and put your keys in /lib/firebase-client.js. Then you need to get your app's service account credentials in order to use firebase admin: go to your firebase project console aka the firebase site > project settings > service accounts tab > generate new private key button > download the file > rename it service_account.json > put in the root of the project.
+To run it locally you'll have to [set up a firebase project](https://firebase.google.com/docs/web/setup) as usual and put your keys in /lib/firebase-client.js. Then you need to get your app's service account credentials in order to use firebase admin: go to your firebase project console aka the firebase site > project settings > service accounts tab > generate new private key button > download the file > rename it service_account.json > put in the root of the project.
 
 The code is commented with hopefully all the info you'll need so check that out. Basically the flow is: registration/login is handled by the normal client side firebase sdk, we extract the ID token and send it to the login endpoint (built with a route handler which is new in next 13 too), then firebase admin (firebase's server side sdk) validates the id token and creates a session cookie, the client side is then logged out (important), and from then on you do all your auth by verifying the session cookie until it's logged out or expires, at which point you start the process over.
 
